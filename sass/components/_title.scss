@@ -1,0 +1,25 @@
+.title {
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+}
+.bakeryh2{
+  margin: 30px 0;
+  position: relative;
+}
+.title::before {
+  @include after-before(#ddd, 150px,3px);
+}
+
+.title::after {
+  @include after-before($main-color, 50px,3px);
+}
+.bakeryh2 h2::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 3px;
+  background-color: $main-color;
+}

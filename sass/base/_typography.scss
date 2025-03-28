@@ -1,0 +1,44 @@
+.card-tile-font {
+  @include font("Poppins", 600, 16px,$title-color);
+}
+
+.card-body-font {
+  @include font("Open Sans", 400, 13px, $text-color);
+}
+
+.card-price {
+  @include font("Open Sans", 900, 16px, $main-color);
+}
+
+.btn-font {
+  text-transform: uppercase;
+  @include font("Poppins", 700, 13px, $btn-color);
+}
+
+.title-font {
+    text-transform: uppercase;
+    @include font("Poppins", 600, 18px, $title-color)
+}
+.head-font{
+  @include font("Open Sans", 400, 13px, $head-color);
+}
+.info{
+  @include font("Open Sans", 400, 13px, $head-color);
+}
+.Types{
+  @include font("Open Sans", 400, 16px, $text-color);
+}
+.nav-links{
+  text-transform: uppercase;
+  @include font("Open Sans", 600, 14px, $title-color)
+}
+.chifs{
+  @include font("Open Sans", 600, 16px, $title-color)
+}
+.bakery-tile-font {
+  @include font("Poppins", 600, 16px,$title-color);
+}
+
+.bakery-body-font {
+  @include font("Open Sans", 400, 13px, $text-color);
+}

@@ -1,0 +1,71 @@
+@media screen and (max-width: 600px),(max-width: 786px ) {
+    .nav-links li {
+      display: none;
+      margin-bottom: 10px;
+    }
+    .logo img {
+      width: 60px;
+    }
+    .ourbakery {
+      .bakery-img {
+        width: 100%;
+          img {
+              width: 100%; /* Ensure image is full width */
+              height: auto;
+          }
+      }
+  } .ourbakery {
+      display: block;
+      img{
+        width: 500px;
+      height: 200px;
+      object-fit: cover;
+      }
+    }
+    .Types {
+      ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0 20px;
+        align-items: center;
+      }
+      
+    }
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .chif-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .nav-icons a {
+      margin-bottom: 10px;
+    }
+    body {
+      padding: 20px;
+    }
+    .Navbar{
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (min-width: 786px ) {
+    .card, .chif-card {
+      width: 45%;
+    }
+    .nav-links {
+      display: flex;
+    }
+    .menu {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .chif-card {
+      width: 23%;
+    }
+  }

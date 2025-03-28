@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: auto;
+    width: 100%;
+    background-color: $main-color;
+    flex-wrap: wrap;
+    .info {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        margin-left: auto;
+      }
+      
+      .info > div {
+        
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .info i {
+        margin-right: 10px;
+      }
+}
+.navbar {
+    position: sticky;
+    height: 15vh;
+    top: 0;
+    background-color: $head-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+    img {
+        margin-left: 30px;
+        width: 150px;
+    }
+    }
+    .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    li {
+        margin-right: 20px;
+        a {
+        transition: color 0.2s ease;
+        @include astyle(none, $title-color, $main-color);
+        }
+    }
+    }
+    .menu{
+        font-size: 35px;
+    }
+    }
+.container{
+    width: 80%;
+    margin: auto;
+}

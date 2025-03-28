@@ -1,0 +1,28 @@
+.ourbakery{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    padding: 1rem 0;
+    .bakery-img{
+        width: 50%;
+        img{
+            width: 100%;
+            height: auto; 
+            object-fit: cover;
+        }
+    }
+    .caption{
+        width: 50%;
+        padding-left: 2rem;
+        .bakeryh2{
+            margin-bottom: 1rem;
+        }
+        .bakerytext{
+            p{
+                line-height: 1.8rem;
+                
+            }
+        }
+    }
+    
+}

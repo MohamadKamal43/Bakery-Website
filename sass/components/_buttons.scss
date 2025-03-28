@@ -1,0 +1,33 @@
+.btn {
+    padding: 6px 14px;
+    border: 2px solid $btn-color;
+    border-radius: 3px;
+    background-color: white;
+    transition: $transition;
+    &:hover{
+        @include elHover($btn-color, white)
+    }
+}
+.nav-btn {
+    padding: 6px 14px;
+    border: 2px solid $btn-color;
+    border-radius: 3px;
+    background-color: white;
+    transition: $transition;
+    &:hover{
+        border: 2px solid $main-color;
+        @include elHover(white, $main-color)
+    }
+}
+.bakerybtn {
+    padding: 6px 14px;
+    border: 2px solid $main-color;
+    border-radius: 3px;
+    color: $head-color;
+    background-color: $main-color;
+    transition: $transition;
+    &:hover{
+        border: 2px solid $main-color;
+        @include elHover(white, $main-color)
+    }
+}

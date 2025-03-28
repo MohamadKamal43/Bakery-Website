@@ -1,0 +1,30 @@
+@mixin font ($family, $weight, $size, $color: black){
+    font: {
+        family: $family, sans-serif;
+        weight: $weight;
+        size: $size;
+    }
+    color: $color;
+}
+@mixin elHover($bg, $color){
+    background-color:$bg ;
+    color: $color;
+}
+
+@mixin after-before ($bg, $width,$height){
+    content: '';
+    width: $width;
+    height: $height;
+    background-color: $bg;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+@mixin astyle($td, $color, $hover-color) {
+    text-decoration: $td;
+    color: $color;
+    &:hover {
+      color: $hover-color;
+    }
+  }

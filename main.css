@@ -1,0 +1,557 @@
+.card-tile-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-body-font {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #696969;
+}
+
+.card-price {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  color: #ebb576;
+}
+
+.btn-font {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #555;
+}
+
+.title-font {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #555555;
+}
+
+.head-font {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: white;
+}
+
+.info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: white;
+}
+
+.Types {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #696969;
+}
+
+.nav-links {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #555555;
+}
+
+.chifs {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #555555;
+}
+
+.bakery-tile-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #555555;
+}
+
+.bakery-body-font {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #696969;
+}
+
+.offer-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.offer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Types ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: 30px;
+  align-items: center;
+}
+.Types a {
+  text-decoration: none;
+  color: #555555;
+}
+.Types a:hover {
+  color: #ebb576;
+}
+
+.chif-card {
+  background-color: #f7f7f7;
+  margin: 0;
+  width: calc(25% - 15px);
+  height: 400px;
+  border: 2px solid rgb(211, 207, 207);
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.head2 {
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.chif-card img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 50px auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.chif-card:hover img {
+  transform: scale(1.1);
+}
+
+.chif-card:hover::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 220px;
+  height: 220px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.chif-card::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chif-icon {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chif-card:hover .chif-icon {
+  opacity: 1;
+}
+
+.chif-icon i {
+  font-size: 1.5rem;
+  color: black;
+  transition: all 0.3s ease, color 0.3s ease;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.chif-icon i:hover {
+  background-color: #ebb576;
+  color: white;
+}
+
+.ourbakery {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.ourbakery .bakery-img {
+  width: 50%;
+}
+.ourbakery .bakery-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ourbakery .caption {
+  width: 50%;
+  padding-left: 2rem;
+}
+.ourbakery .caption .bakeryh2 {
+  margin-bottom: 1rem;
+}
+.ourbakery .caption .bakerytext p {
+  line-height: 1.8rem;
+}
+
+.footer {
+  color: white;
+  position: relative;
+  padding: 40px 20px;
+  text-align: center;
+  background-image: url("./images/footer.jpg");
+  background-size: cover;
+  background-color: transparent;
+}
+.footer .footer-content {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.footer .footer-content .nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer .footer-content .nav-icons a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  background-color: #555555;
+  font-size: 25px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.footer .footer-content .nav-icons a:hover {
+  background-color: #555555;
+  color: #ebb576;
+}
+.footer .footer-content .nav-icons a i {
+  display: inline-block;
+}
+.footer .footer-content h1 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.footer .footer-content .contact-info {
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.footer .footer-content .copyright {
+  font-size: 0.875rem;
+  margin-top: 20px;
+  color: #555555;
+}
+.footer .footer-content .footimg {
+  width: 200px;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 0;
+}
+
+.card {
+  display: flex;
+  width: 50%;
+}
+.card img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 130px;
+  height: 130px;
+}
+
+.btn {
+  padding: 6px 14px;
+  border: 2px solid #555;
+  border-radius: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #555;
+  color: white;
+}
+
+.nav-btn {
+  padding: 6px 14px;
+  border: 2px solid #555;
+  border-radius: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.nav-btn:hover {
+  border: 2px solid #ebb576;
+  background-color: white;
+  color: #ebb576;
+}
+
+.bakerybtn {
+  padding: 6px 14px;
+  border: 2px solid #ebb576;
+  border-radius: 3px;
+  color: white;
+  background-color: #ebb576;
+  transition: all 0.3s ease-in-out;
+}
+.bakerybtn:hover {
+  border: 2px solid #ebb576;
+  background-color: white;
+  color: #ebb576;
+}
+
+.title {
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+}
+
+.bakeryh2 {
+  margin: 30px 0;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  width: 150px;
+  height: 3px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #ebb576;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bakeryh2 h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 3px;
+  background-color: #ebb576;
+}
+
+.icon {
+  height: 20px;
+  padding: 5px;
+  color: white;
+  width: 20px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon:hover {
+  height: 20px;
+  width: 20px;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 600px), (max-width: 786px) {
+  .nav-links li {
+    display: none;
+    margin-bottom: 10px;
+  }
+  .logo img {
+    width: 60px;
+  }
+  .ourbakery .bakery-img {
+    width: 100%;
+  }
+  .ourbakery .bakery-img img {
+    width: 100%; /* Ensure image is full width */
+    height: auto;
+  }
+  .ourbakery {
+    display: block;
+  }
+  .ourbakery img {
+    width: 500px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Types ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0 20px;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .chif-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .nav-icons a {
+    margin-bottom: 10px;
+  }
+  body {
+    padding: 20px;
+  }
+  .Navbar {
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 786px) {
+  .card, .chif-card {
+    width: 45%;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .chif-card {
+    width: 23%;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: auto;
+  width: 100%;
+  background-color: #ebb576;
+  flex-wrap: wrap;
+}
+.head .info {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-left: auto;
+}
+.head .info > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.head .info i {
+  margin-right: 10px;
+}
+
+.navbar {
+  position: sticky;
+  height: 15vh;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo img {
+  margin-left: 30px;
+  width: 150px;
+}
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-links li {
+  margin-right: 20px;
+}
+.navbar .nav-links li a {
+  transition: color 0.2s ease;
+  text-decoration: none;
+  color: #555555;
+}
+.navbar .nav-links li a:hover {
+  color: #ebb576;
+}
+.navbar .menu {
+  font-size: 35px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */
